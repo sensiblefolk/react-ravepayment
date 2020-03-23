@@ -9,7 +9,9 @@ type Currency =
   | 'XAF'
   | 'XOF'
   | 'ZAR'
-  | 'TZS';
+  | 'TZS'
+  | string;
+
 type Country = 'NG' | 'GH' | 'KE' | 'ZA' | 'TX' | string;
 export type PaymentOptions =
   | 'card'
@@ -23,7 +25,8 @@ export type PaymentOptions =
   | 'mobilemoneyzambia'
   | 'mobilemoneytanzania'
   | 'barter'
-  | 'bank transfer';
+  | 'bank transfer'
+  | string;
 
 type SubAccount = {id: string} & Record<string, string>;
 
